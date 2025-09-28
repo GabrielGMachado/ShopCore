@@ -8,9 +8,10 @@ public class User : Entity
     public string Email { get; private set; }
     public string Password { get; private set; }
     public string CPF { get; private set; }
-    public int Telefone { get; private set; }
+    public string Telefone { get; private set; }
     public Permission Role { get; private set; } = Permission.Client;
 
-    public ICollection<Address> Address { get; private set; }
+    public ICollection<Address> Addresses { get; private set; }
     public Cart Cart { get; private set; }
+    public ICollection<Product> Products { get; private set; }
 }
