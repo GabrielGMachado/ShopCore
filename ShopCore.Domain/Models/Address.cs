@@ -11,5 +11,5 @@ public class Address : Entity
     public Guid UserId { get; private set; }
 
     public User User { get; private set; }
-    public ICollection<Order> Orders { get; private set;
+    public ICollection<Order> Orders { get; private set; }
 }
