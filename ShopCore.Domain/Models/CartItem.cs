@@ -2,8 +2,8 @@
 
 public class CartItem : Entity
 {
-    public DateTime CreateAt { get; private set; } = DateTime.Now;
-    public DateTime UpdateAt { get; private set; }
+    public DateTime CreatedAt { get; private set; } = DateTime.UtcNow;
+    public DateTime UpdatedAt { get; private set; } = DateTime.UtcNow;
     public int Quantity { get; private set; }
     public Guid CartId { get; private set; }
     public Guid ProductId { get; private set; }

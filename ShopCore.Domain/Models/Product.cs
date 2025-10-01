@@ -16,5 +16,6 @@ namespace ShopCore.Domain.Models
         public ICollection<CartItem> CartItems  { get; private set; }
         public ICollection<ProductImage> ProductImages { get; private set; }
         public ICollection<ProductComment> ProductComments { get; private set; }
+        public ICollection<OrderItem> OrderItems { get; private set; }
     }
 }

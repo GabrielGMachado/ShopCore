@@ -14,4 +14,7 @@ public class User : Entity
     public ICollection<Address> Addresses { get; private set; }
     public Cart Cart { get; private set; }
     public ICollection<Product> Products { get; private set; }
+    public ICollection<Order> Orders { get; private set; }
+    public ICollection<ProductComment> ProductComments { get; private set; }
+    public ICollection<Report> Reports { get; private set; }
 }

@@ -56,5 +56,14 @@ public class UserMapping : IEntityTypeConfiguration<User>
         builder.HasMany(x => x.Products)
             .WithOne(x => x.User)
             .OnDelete(DeleteBehavior.Cascade);
+
+        builder.HasMany(x => x.Orders)
+            .WithOne(x => x.User);
+
+        builder.HasMany(x => x.ProductComments)
+            .WithOne(x => x.User);
+
+        builder.HasMany(x => x.Reports)
+            .WithOne(x => x.User);
     }
 }

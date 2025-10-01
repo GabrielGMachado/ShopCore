@@ -9,7 +9,7 @@ public class ProductComment : Entity
     public string? Description { get; private set; }
     public string? Image { get; private set; }
     public Status Status { get; private set; }
-    public DateTime CreatedAt { get; private set; }
+    public DateTime CreatedAt { get; private set; } = DateTime.UtcNow;
     public Guid UserId { get; private set; }
     public Guid ProductId { get; private set; }
 
